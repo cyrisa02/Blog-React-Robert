@@ -6,16 +6,35 @@ App.js avec sa div App
 babel convertit en js
 webpack
 
-Hook et cycle de vie d'un composant (le compsoant est rendu on exécute du code)
+Hook (fonction react ) et cycle de vie d'un composant (le composant est rendu on exécute du code)
 useeffect
 je veux executer du code juste après le premier rendu du composant Meal
 le code que je veux éxécuter est un appel vers une API
 pour récupérer des receettes de cuisine
 et les afficher dans mon composant Meal pour qu'elles soient affichées dans ma page
 
--> Useeffect
+
+
+ axios est un concurrent de fetch. Axios est un bundle. fetch renvoie la promesse (en cours/échec/succès). await on attend la promesse.
+
+Un composant c'est une fonction fléchée const en fait
+
+
+Axios installation
+npm install axios
+
+
+opérateur ternaire
+
+
+-> UseEffect
 
 interagir avec react 
+
+
+
+
+->UseState
 
 
 

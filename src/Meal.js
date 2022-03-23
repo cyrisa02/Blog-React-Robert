@@ -12,18 +12,22 @@ let meal = null;
 
             const mealsFromApi = await response.json();
 
-            const meal = mealsFromApi.meals[0];  
+            const meal = mealsFromApi.meals[0];  //meals est la clé de l'API json
             
-            console.log (meal);
-
+            
         })();
     });
 
     return (
-        <article>
-            <h2>Pâté en croute</h2>
-            
+        <>
+        {meal ? (
+            <article>
+            <h2>{meal.strMeal}</h2>            
         </article>
+        ) : (
+            <p>Pas de recette/// strMeal vient du tableau json. </p>
+        )}
+        </>
     );
 };
 
